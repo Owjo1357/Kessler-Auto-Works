@@ -8,6 +8,10 @@ body {
   margin: 0;
 }
 
+h2 {
+  color: white;
+}
+
 .btn {
   background: #f26b1d;
   color: white;
