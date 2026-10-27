@@ -1,0 +1,18 @@
+header {
+  color: white;
+  padding: 16px 20px;
+}
+
+body {
+  background: #1b2a41;
+  margin: 0;
+}
+
+.btn {
+  background: #f26b1d;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
