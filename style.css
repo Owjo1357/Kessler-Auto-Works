@@ -13,6 +13,10 @@ h2 {
   padding: 16px 20px;
 }
 
+tr {
+  color: #1b2a41;
+}
+
 .btn {
   background: #f26b1d;
   color: white;
@@ -20,4 +24,8 @@ h2 {
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
+}
+
+#services {
+  margin-top: 32px;
 }
