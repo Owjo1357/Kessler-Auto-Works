@@ -8,13 +8,31 @@ body {
   margin: 0;
 }
 
-h2 {
-  color: #1b2a41;
-  padding: 16px 20px;
+main {
+  padding: 0 20px;
 }
 
-tr {
+h2 {
   color: #1b2a41;
+  padding: 16px 0;
+}
+
+tr,
+p,
+address {
+  color: #1b2a41;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 6px 8px 6px 0;
+}
+
+address {
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 16px;
 }
 
 .btn {
@@ -27,5 +45,9 @@ tr {
 }
 
 #services {
+  margin-top: 32px;
+}
+
+#hours-location {
   margin-top: 32px;
 }

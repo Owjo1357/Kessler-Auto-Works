@@ -18,10 +18,12 @@ Kessler Auto Works is a fictional, family-owned auto repair shop in Durham, NC, 
 
 The phone number is the most important thing on the site: most customers call rather than book online.
 
-- **Address:** 418 Bramble Ln, Durham, NC 27704 (fictional)
+- **Address:** 418 Bramble Ln, Durham, NC 27704 (fictional; show this as the address on the site)
 - **Phone:** (919) 555-0147
 - **Email:** service@kesslerautoworks.example
 - **Parking:** customer spots by the office door; after-hours key drop box by the front bay
+
+**For the map and directions link,** point them at the intersection of N Roxboro St and E Club Blvd, Durham, NC instead. A real intersection works in Google Maps without pinning anyone's actual home or business. Search that in Google Maps, then use Share, then Embed a map to get the code.
 
 | Day | Hours |
 | --- | --- |
