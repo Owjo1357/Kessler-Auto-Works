@@ -314,34 +314,19 @@ footer a {
   color: white;
 }
 
-body {
-  padding-bottom: 56px;
-}
-
-.call-bar {
-  display: block;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  border-radius: 0;
-  padding: 16px;
-  text-align: center;
-  box-shadow: 0 -2px 8px rgb(27 42 65 / 20%);
-}
-
 @media (max-width: 600px) {
   html {
     scroll-padding-top: 80px;
   }
 
   header h1 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
-  .header-number {
-    display: none;
+  header .btn {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+    white-space: nowrap;
   }
 
   table {
