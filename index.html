@@ -21,6 +21,11 @@
 
       <section id="services">
         <h2>Services and prices</h2>
+        <img
+          src="Images/services.jpg"
+          alt="Mechanic working under the hood of a car"
+          class="section-photo"
+        />
         <table>
           <tr>
             <th>Service</th>
@@ -103,6 +108,13 @@
             <h3>Easy payment</h3>
             <p>Pay with cash, major cards, Apple Pay, or Google Pay.</p>
           </article>
+          <article class="benefit">
+            <h3>Flexible scheduling</h3>
+            <p>
+              Appointments are preferred for repairs. Walk-ins are welcome for
+              oil changes and inspections.
+            </p>
+          </article>
         </div>
       </section>
 
@@ -174,12 +186,42 @@
       </section>
 
       <section id="contact">
-        <!-- appointment request form -->
+        <h2>Request an appointment</h2>
+        <p>
+          Send us your details and we'll call you to set up a time. In a hurry?
+          Call <a href="tel:+19195550147">(919) 555-0147</a>.
+        </p>
+        <form id="appointment-form">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required />
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+
+          <label for="car">Car (year, make, model)</label>
+          <input
+            id="car"
+            name="car"
+            type="text"
+            placeholder="2015 Honda Civic"
+            required
+          />
+
+          <label for="problem">What's wrong?</label>
+          <textarea id="problem" name="problem" rows="4" required></textarea>
+
+          <button type="submit" class="btn">Send request</button>
+        </form>
+        <p id="form-message" class="form-message" role="status" hidden></p>
       </section>
     </main>
 
     <footer>
-      <!-- "Fictional business for a practice project" -->
+      <p>
+        Kessler Auto Works · 418 Bramble Ln, Durham, NC 27704 ·
+        <a href="tel:+19195550147">(919) 555-0147</a>
+      </p>
+      <p>Fictional business for a practice project.</p>
     </footer>
   </body>
 </html>

@@ -43,9 +43,36 @@ address {
   background: #f26b1d;
   color: white;
   padding: 12px 20px;
+  border: none;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#hero {
+  background:
+    linear-gradient(rgb(27 42 65 / 75%), rgb(27 42 65 / 75%)),
+    url("Images/hero.jpg") center / cover;
+  border-radius: 6px;
+  padding: 40px 20px;
+}
+
+#hero h2 {
+  color: white;
+  font-size: 1.8rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.section-photo {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 16px;
 }
 
 #services {
@@ -106,6 +133,61 @@ blockquote cite {
 
 #hours-location {
   margin-top: 32px;
+}
+
+#contact {
+  margin-top: 40px;
+}
+
+#appointment-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+}
+
+#appointment-form[hidden] {
+  display: none;
+}
+
+#appointment-form label {
+  color: #1b2a41;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+#appointment-form input,
+#appointment-form textarea {
+  font: inherit;
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #8a94a3;
+  border-radius: 6px;
+  margin-top: 4px;
+}
+
+#appointment-form button {
+  align-self: flex-start;
+  margin-top: 20px;
+}
+
+.form-message {
+  background: white;
+  border-left: 4px solid #f26b1d;
+  border-radius: 6px;
+  padding: 18px;
+  font-weight: bold;
+}
+
+footer {
+  background: #1b2a41;
+  margin-top: 48px;
+  padding: 24px 20px;
+  text-align: center;
+}
+
+footer p,
+footer a {
+  color: white;
 }
 
 @media (max-width: 600px) {
