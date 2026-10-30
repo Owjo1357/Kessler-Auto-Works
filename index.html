@@ -21,7 +21,12 @@
 
       <section id="services">
         <h2>Services and prices</h2>
-        <table>
+        <img
+          src="Images/services.jpg"
+          alt="Mechanic working under the hood of a car"
+          class="section-photo"
+        />
+        <table class="price-table">
           <tr>
             <th>Service</th>
             <th>Price</th>
@@ -78,6 +83,14 @@
             <td>Engine, suspension, cooling, electrical</td>
           </tr>
         </table>
+        <p class="table-note">
+          "From" prices are starting points. The final price depends on your
+          car.
+        </p>
+        <p class="makes">
+          <strong>Cars we work on:</strong> most domestic and Asian makes, cars
+          and light trucks. No diesel and no European luxury brands.
+        </p>
       </section>
 
       <section id="why-us">
@@ -101,7 +114,41 @@
           </article>
           <article class="benefit">
             <h3>Easy payment</h3>
-            <p>Pay with cash, major cards, Apple Pay, or Google Pay.</p>
+            <p>Pay with cash, major cards, Apple Pay, or Google Pay. No checks.</p>
+          </article>
+          <article class="benefit">
+            <h3>Flexible scheduling</h3>
+            <p>
+              Appointments are preferred for repairs. Walk-ins are welcome for
+              oil changes and inspections.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>Meet the shop</h2>
+        <p>
+          Kessler Auto Works is a family-owned shop in Durham, open since 2009.
+          Owner Ray Kessler is an ASE-certified mechanic with 22 years of
+          experience.
+        </p>
+        <div class="team-grid">
+          <article class="team-member">
+            <h3>Ray</h3>
+            <p>Owner and ASE-certified mechanic</p>
+          </article>
+          <article class="team-member">
+            <h3>Dee</h3>
+            <p>Mechanic</p>
+          </article>
+          <article class="team-member">
+            <h3>Marcus</h3>
+            <p>Mechanic</p>
+          </article>
+          <article class="team-member">
+            <h3>Lena</h3>
+            <p>Front desk, and Ray's daughter</p>
           </article>
         </div>
       </section>
@@ -137,49 +184,111 @@
 
       <section id="hours-location">
         <h2>Hours and location</h2>
-        <table>
-          <tr>
-            <th>Day</th>
-            <th>Hours</th>
-          </tr>
-          <tr>
-            <td>Monday to Friday</td>
-            <td>7:30 AM – 6:00 PM</td>
-          </tr>
-          <tr>
-            <td>Saturday</td>
-            <td>8:00 AM – 2:00 PM (oil changes, inspections, tires only)</td>
-          </tr>
-          <tr>
-            <td>Sunday</td>
-            <td>Closed</td>
-          </tr>
-        </table>
-        <p>
-          Closed on New Year's Day, Memorial Day, July 4th, Labor Day,
-          Thanksgiving and Christmas.
-        </p>
-        <address>418 Bramble Ln, Durham, NC 27704</address>
-        <a
-          href="https://www.google.com/maps/search/?api=1&amp;query=N+Roxboro+St+%26+E+Club+Blvd,+Durham,+NC"
-          class="btn"
-          target="_blank"
-          rel="noopener"
-          >Get directions</a
-        >
-        <p>
-          Park in the customer spots by the office door. After hours, use the
-          key drop box by the front bay.
-        </p>
+        <div class="location-grid">
+          <div>
+            <table class="hours-table">
+              <tr>
+                <th>Day</th>
+                <th>Hours</th>
+              </tr>
+              <tr>
+                <td>Monday to Friday</td>
+                <td>7:30 AM – 6:00 PM</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>
+                  8:00 AM – 2:00 PM
+                  <span class="cell-note"
+                    >Oil changes, inspections and tires only</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+              </tr>
+            </table>
+            <p class="table-note">
+              Closed on New Year's Day, Memorial Day, July 4th, Labor Day,
+              Thanksgiving and Christmas.
+            </p>
+          </div>
+
+          <div class="location-card">
+            <h3>Find us</h3>
+            <address>418 Bramble Ln, Durham, NC 27704</address>
+            <p class="email">
+              <a href="mailto:service@kesslerautoworks.example"
+                >service@kesslerautoworks.example</a
+              >
+            </p>
+            <iframe
+              class="map"
+              title="Map to Kessler Auto Works"
+              src="https://www.google.com/maps?q=N+Roxboro+St+%26+E+Club+Blvd,+Durham,+NC&amp;output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=N+Roxboro+St+%26+E+Club+Blvd,+Durham,+NC"
+              class="btn"
+              target="_blank"
+              rel="noopener"
+              >Get directions</a
+            >
+            <p>
+              <strong>Parking:</strong> Customer parking is right by the office
+              door.
+            </p>
+            <p>
+              <strong>After hours:</strong> Drop your keys in the box next to
+              the front bay.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section id="contact">
-        <!-- appointment request form -->
+        <h2>Request an appointment</h2>
+        <p>
+          Send us your details and we'll call you to set up a time. In a hurry?
+          Call <a href="tel:+19195550147">(919) 555-0147</a>.
+        </p>
+        <form id="appointment-form">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required />
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+
+          <label for="car">Car (year, make, model)</label>
+          <input
+            id="car"
+            name="car"
+            type="text"
+            placeholder="2015 Honda Civic"
+            required
+          />
+
+          <label for="problem">What's wrong?</label>
+          <textarea id="problem" name="problem" rows="4" required></textarea>
+
+          <button type="submit" class="btn">Send request</button>
+        </form>
+        <p id="form-message" class="form-message" role="status" hidden></p>
       </section>
     </main>
 
     <footer>
-      <!-- "Fictional business for a practice project" -->
+      <p>
+        Kessler Auto Works · 418 Bramble Ln, Durham, NC 27704 ·
+        <a href="tel:+19195550147">(919) 555-0147</a> ·
+        <a href="mailto:service@kesslerautoworks.example"
+          >service@kesslerautoworks.example</a
+        >
+      </p>
+      <p>Fictional business for a practice project.</p>
     </footer>
   </body>
 </html>

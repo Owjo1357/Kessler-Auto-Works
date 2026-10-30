@@ -1,6 +1,23 @@
+html {
+  scroll-padding-top: 90px;
+}
+
 header {
   color: #1b2a41;
-  padding: 16px 20px;
+  padding: 12px max(20px, calc((100% - 1060px) / 2));
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #f1f3f5;
+  box-shadow: 0 2px 8px rgb(27 42 65 / 10%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+header h1 {
+  margin: 0;
 }
 
 body {
@@ -27,10 +44,58 @@ address {
   color: #1b2a41;
 }
 
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgb(27 42 65 / 10%);
+  overflow: hidden;
+}
+
 th,
 td {
   text-align: left;
-  padding: 6px 8px 6px 0;
+  padding: 12px;
+  vertical-align: top;
+}
+
+th {
+  background: #1b2a41;
+  color: white;
+}
+
+td {
+  border-top: 1px solid #e3e7ec;
+}
+
+tr:nth-child(even) td {
+  background: #f8f9fa;
+}
+
+.price-table td:nth-child(2) {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.price-table td:nth-child(3),
+.cell-note,
+.table-note {
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+.cell-note {
+  display: block;
+}
+
+.table-note {
+  margin-top: 8px;
+}
+
+.makes {
+  margin-top: 16px;
 }
 
 address {
@@ -40,12 +105,40 @@ address {
 }
 
 .btn {
-  background: #f26b1d;
+  background: #c2410c;
   color: white;
   padding: 12px 20px;
+  border: none;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#hero {
+  background:
+    linear-gradient(rgb(27 42 65 / 75%), rgb(27 42 65 / 75%)),
+    url("Images/hero.jpg") center / cover;
+  border-radius: 6px;
+  padding: 40px 20px;
+  margin-top: 20px;
+}
+
+#hero h2 {
+  color: white;
+  font-size: 1.8rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.section-photo {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 16px;
 }
 
 #services {
@@ -53,33 +146,46 @@ address {
 }
 
 #why-us,
+#about,
 #reviews {
   margin-top: 40px;
 }
 
 .benefits,
+.team-grid,
 .reviews-grid {
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
+.team-grid {
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.benefits {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
 .benefit,
+.team-member,
 blockquote {
   background: white;
-  border-left: 4px solid #f26b1d;
+  border-left: 4px solid #c2410c;
   border-radius: 6px;
   box-shadow: 0 2px 8px rgb(27 42 65 / 10%);
   margin: 0;
   padding: 18px;
 }
 
-.benefit h3 {
+.benefit h3,
+.team-member h3 {
   color: #1b2a41;
   margin: 0 0 8px;
 }
 
 .benefit p,
+.team-member p,
 blockquote p {
   margin: 0;
 }
@@ -90,7 +196,7 @@ blockquote p {
 }
 
 .rating strong {
-  color: #f26b1d;
+  color: #c2410c;
 }
 
 blockquote {
@@ -105,19 +211,130 @@ blockquote cite {
 }
 
 #hours-location {
-  margin-top: 32px;
+  margin-top: 40px;
+}
+
+.location-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: start;
+}
+
+.location-card {
+  background: white;
+  border-left: 4px solid #c2410c;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgb(27 42 65 / 10%);
+  padding: 18px;
+}
+
+.location-card h3 {
+  color: #1b2a41;
+  margin: 0 0 8px;
+}
+
+.map {
+  display: block;
+  width: 100%;
+  height: 220px;
+  border: 0;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.location-card p {
+  margin-bottom: 0;
+}
+
+.location-card .email {
+  margin: 0 0 16px;
+}
+
+.location-card .email a {
+  color: #1b2a41;
+}
+
+#contact {
+  margin-top: 40px;
+}
+
+#contact p a {
+  color: #1b2a41;
+  font-weight: bold;
+}
+
+#appointment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#appointment-form[hidden] {
+  display: none;
+}
+
+#appointment-form label {
+  color: #1b2a41;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+#appointment-form input,
+#appointment-form textarea {
+  font: inherit;
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #8a94a3;
+  border-radius: 6px;
+  margin-top: 4px;
+}
+
+#appointment-form button {
+  align-self: flex-start;
+  margin-top: 20px;
+}
+
+.form-message {
+  background: white;
+  border-left: 4px solid #c2410c;
+  border-radius: 6px;
+  padding: 18px;
+  font-weight: bold;
+}
+
+footer {
+  background: #1b2a41;
+  margin-top: 48px;
+  padding: 24px 20px;
+  text-align: center;
+}
+
+footer p,
+footer a {
+  color: white;
 }
 
 @media (max-width: 600px) {
-  header {
-    padding: 16px 20px 24px;
+  html {
+    scroll-padding-top: 80px;
   }
 
-  h1 {
-    font-size: 1.8rem;
+  header h1 {
+    font-size: 1.1rem;
+  }
+
+  header .btn {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+    white-space: nowrap;
   }
 
   table {
     font-size: 0.9rem;
+  }
+
+  th,
+  td {
+    padding: 10px 8px;
   }
 }
