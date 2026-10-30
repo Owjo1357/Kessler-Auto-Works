@@ -77,6 +77,10 @@ tr:nth-child(even) td {
   margin-top: 8px;
 }
 
+.makes {
+  margin-top: 16px;
+}
+
 address {
   font-style: normal;
   font-weight: bold;
@@ -124,18 +128,25 @@ address {
 }
 
 #why-us,
+#about,
 #reviews {
   margin-top: 40px;
 }
 
 .benefits,
+.team-grid,
 .reviews-grid {
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
+.team-grid {
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
 .benefit,
+.team-member,
 blockquote {
   background: white;
   border-left: 4px solid #c2410c;
@@ -145,12 +156,14 @@ blockquote {
   padding: 18px;
 }
 
-.benefit h3 {
+.benefit h3,
+.team-member h3 {
   color: #1b2a41;
   margin: 0 0 8px;
 }
 
 .benefit p,
+.team-member p,
 blockquote p {
   margin: 0;
 }
@@ -212,8 +225,21 @@ blockquote cite {
   margin-bottom: 0;
 }
 
+.location-card .email {
+  margin: 0 0 16px;
+}
+
+.location-card .email a {
+  color: #1b2a41;
+}
+
 #contact {
   margin-top: 40px;
+}
+
+#contact p a {
+  color: #1b2a41;
+  font-weight: bold;
 }
 
 #appointment-form {
@@ -267,7 +293,28 @@ footer a {
   color: white;
 }
 
+.call-bar {
+  display: none;
+}
+
 @media (max-width: 600px) {
+  body {
+    padding-bottom: 56px;
+  }
+
+  .call-bar {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    border-radius: 0;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 -2px 8px rgb(27 42 65 / 20%);
+  }
+
   header {
     padding: 16px 20px 24px;
   }
