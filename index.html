@@ -249,64 +249,32 @@
 
       <section id="contact">
         <h2>Request an appointment</h2>
-        <div class="contact-grid">
-          <div class="contact-info">
-            <p>Send us your details and we'll call you to set up a time.</p>
-            <ul class="contact-points">
-              <li>Free written estimate before any work starts</li>
-              <li>Walk-ins welcome for oil changes and inspections</li>
-              <li>
-                In a hurry? Call <a href="tel:+19195550147">(919) 555-0147</a>
-              </li>
-            </ul>
-          </div>
+        <p>
+          Send us your details and we'll call you to set up a time. In a hurry?
+          Call <a href="tel:+19195550147">(919) 555-0147</a>.
+        </p>
+        <form id="appointment-form">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required />
 
-          <div class="form-card">
-            <form id="appointment-form">
-              <div class="form-row">
-                <div class="field">
-                  <label for="name">Name</label>
-                  <input
-                    id="name"
-                    name="name"
-                    type="text"
-                    autocomplete="name"
-                    required
-                  />
-                </div>
-                <div class="field">
-                  <label for="phone">Phone</label>
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    autocomplete="tel"
-                    required
-                  />
-                </div>
-              </div>
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" required />
 
-              <div class="field">
-                <label for="car">Car (year, make, model)</label>
-                <input
-                  id="car"
-                  name="car"
-                  type="text"
-                  placeholder="2015 Honda Civic"
-                  required
-                />
-              </div>
+          <label for="car">Car (year, make, model)</label>
+          <input
+            id="car"
+            name="car"
+            type="text"
+            placeholder="2015 Honda Civic"
+            required
+          />
 
-              <div class="field">
-                <label for="problem">What's wrong?</label>
-                <textarea id="problem" name="problem" rows="4" required></textarea>
-              </div>
+          <label for="problem">What's wrong?</label>
+          <textarea id="problem" name="problem" rows="4" required></textarea>
 
-              <button type="submit" class="btn">Send request</button>
-            </form>
-            <p id="form-message" class="form-message" role="status" hidden></p>
-          </div>
-        </div>
+          <button type="submit" class="btn">Send request</button>
+        </form>
+        <p id="form-message" class="form-message" role="status" hidden></p>
       </section>
     </main>
 
