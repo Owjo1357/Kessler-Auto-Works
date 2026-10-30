@@ -26,7 +26,7 @@
           alt="Mechanic working under the hood of a car"
           class="section-photo"
         />
-        <table>
+        <table class="price-table">
           <tr>
             <th>Service</th>
             <th>Price</th>
@@ -83,6 +83,10 @@
             <td>Engine, suspension, cooling, electrical</td>
           </tr>
         </table>
+        <p class="table-note">
+          "From" prices are starting points. The final price depends on your
+          car.
+        </p>
       </section>
 
       <section id="why-us">
@@ -149,40 +153,60 @@
 
       <section id="hours-location">
         <h2>Hours and location</h2>
-        <table>
-          <tr>
-            <th>Day</th>
-            <th>Hours</th>
-          </tr>
-          <tr>
-            <td>Monday to Friday</td>
-            <td>7:30 AM – 6:00 PM</td>
-          </tr>
-          <tr>
-            <td>Saturday</td>
-            <td>8:00 AM – 2:00 PM (oil changes, inspections, tires only)</td>
-          </tr>
-          <tr>
-            <td>Sunday</td>
-            <td>Closed</td>
-          </tr>
-        </table>
-        <p>
-          Closed on New Year's Day, Memorial Day, July 4th, Labor Day,
-          Thanksgiving and Christmas.
-        </p>
-        <address>418 Bramble Ln, Durham, NC 27704</address>
-        <a
-          href="https://www.google.com/maps/search/?api=1&amp;query=N+Roxboro+St+%26+E+Club+Blvd,+Durham,+NC"
-          class="btn"
-          target="_blank"
-          rel="noopener"
-          >Get directions</a
-        >
-        <p>
-          Park in the customer spots by the office door. After hours, use the
-          key drop box by the front bay.
-        </p>
+        <div class="location-grid">
+          <div>
+            <table class="hours-table">
+              <tr>
+                <th>Day</th>
+                <th>Hours</th>
+              </tr>
+              <tr>
+                <td>Monday to Friday</td>
+                <td>7:30 AM – 6:00 PM</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>
+                  8:00 AM – 2:00 PM
+                  <span class="cell-note"
+                    >Oil changes, inspections and tires only</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+              </tr>
+            </table>
+            <p class="table-note">
+              Closed on New Year's Day, Memorial Day, July 4th, Labor Day,
+              Thanksgiving and Christmas.
+            </p>
+          </div>
+
+          <div class="location-card">
+            <h3>Find us</h3>
+            <address>418 Bramble Ln, Durham, NC 27704</address>
+            <iframe
+              class="map"
+              title="Map to Kessler Auto Works"
+              src="https://www.google.com/maps?q=N+Roxboro+St+%26+E+Club+Blvd,+Durham,+NC&amp;output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=N+Roxboro+St+%26+E+Club+Blvd,+Durham,+NC"
+              class="btn"
+              target="_blank"
+              rel="noopener"
+              >Get directions</a
+            >
+            <p>
+              <strong>Parking:</strong> customer spots are by the office door.
+              After hours, use the key drop box by the front bay.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section id="contact">
