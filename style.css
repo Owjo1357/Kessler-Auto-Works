@@ -259,15 +259,54 @@ blockquote cite {
   margin-top: 40px;
 }
 
-#contact p a {
+.contact-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: start;
+}
+
+.contact-info p {
+  margin-top: 0;
+}
+
+.contact-points {
+  color: #1b2a41;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.contact-points li {
+  margin-bottom: 8px;
+}
+
+.contact-points a {
   color: #1b2a41;
   font-weight: bold;
+}
+
+.form-card {
+  background: white;
+  border-left: 4px solid #c2410c;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgb(27 42 65 / 10%);
+  padding: 8px 24px 24px;
+}
+
+.form-row {
+  display: grid;
+  gap: 0 16px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
 }
 
 #appointment-form {
   display: flex;
   flex-direction: column;
-  max-width: 480px;
 }
 
 #appointment-form[hidden] {
@@ -296,11 +335,8 @@ blockquote cite {
 }
 
 .form-message {
-  background: white;
-  border-left: 4px solid #c2410c;
-  border-radius: 6px;
-  padding: 18px;
   font-weight: bold;
+  margin: 16px 0 0;
 }
 
 footer {
