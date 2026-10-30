@@ -40,7 +40,7 @@ address {
 }
 
 .btn {
-  background: #f26b1d;
+  background: #c2410c;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -94,7 +94,7 @@ address {
 .benefit,
 blockquote {
   background: white;
-  border-left: 4px solid #f26b1d;
+  border-left: 4px solid #c2410c;
   border-radius: 6px;
   box-shadow: 0 2px 8px rgb(27 42 65 / 10%);
   margin: 0;
@@ -117,7 +117,7 @@ blockquote p {
 }
 
 .rating strong {
-  color: #f26b1d;
+  color: #c2410c;
 }
 
 blockquote {
@@ -172,7 +172,7 @@ blockquote cite {
 
 .form-message {
   background: white;
-  border-left: 4px solid #f26b1d;
+  border-left: 4px solid #c2410c;
   border-radius: 6px;
   padding: 18px;
   font-weight: bold;
