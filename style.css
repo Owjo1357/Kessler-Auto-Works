@@ -267,7 +267,6 @@ blockquote cite {
 #appointment-form {
   display: flex;
   flex-direction: column;
-  max-width: 480px;
 }
 
 #appointment-form[hidden] {
